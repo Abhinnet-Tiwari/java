@@ -12,11 +12,11 @@ class Basic{
         }
     }
     public void reverseN(int n){
-        int result=0;
+        int result;
         while(n>0){
             int last=n%10;
+            int rev = n/10;
             result = result*10+last;
-            n=n/10;
         }
         System.out.println(result);
     }
